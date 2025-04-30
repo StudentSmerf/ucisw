@@ -1,0 +1,23 @@
+entity Image is
+
+[zmień]
+    Port ( x : in  STD_LOGIC_VECTOR (4 downto 0); tu zmień
+           y : in  STD_LOGIC_VECTOR (4 downto 0); tu zmień
+
+           clk : in  STD_LOGIC;
+           red : out  STD_LOGIC;
+           green : out  STD_LOGIC;
+           blue : out  STD_LOGIC;
+           adres : out  STD_LOGIC_VECTOR (9 downto 0);
+           dane : in  STD_LOGIC);
+end Image;
+
+
+
+begin
+	process(clk)
+	begin 
+	if rising_edge(clk) then
+	[dodaj]
+	adres <= x & y;	
+		
